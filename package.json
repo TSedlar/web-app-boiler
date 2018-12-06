@@ -1,0 +1,59 @@
+{
+  "name": "web-app-boiler",
+  "displayName": "Web App Boiler",
+  "version": "1.0.0",
+  "description": "A sample web application using React, Cordova and NWJS",
+  "author": "Tyler Sedlar",
+  "license": "MIT",
+  "homepage": "./",
+  "main": "index.js",
+  "scripts": {
+    "start-pwa": "react-scripts start",
+    "build-pwa": "react-scripts build && rm -rf ./www/ && cp -a ./build/. ./www/",
+    "start-dwa": "nw-react-scripts start",
+    "build-dwa": "nw-react-scripts build"
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.4",
+    "cordova-browser": "^5.0.4",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "react": "^16.6.3",
+    "react-device-detect": "^1.6.1",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "nw-react-scripts": "2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "browser",
+      "android"
+    ]
+  },
+  "nwBuilder": {
+      "//": "https://github.com/nwjs-community/nw-builder",
+      "platforms": [
+        "osx64",
+        "linux32",
+        "linux64",
+        "win32",
+        "win64"
+      ],
+      "version": "latest",
+      "flavor": "normal",
+      "buildDir": "./build-dwa",
+      "cacheDir": "./cache",
+      "macIcns": "./public/favicon.icns"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
