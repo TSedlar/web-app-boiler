@@ -36,19 +36,19 @@
     ]
   },
   "nwBuilder": {
-      "//": "https://github.com/nwjs-community/nw-builder",
-      "platforms": [
-        "osx64",
-        "linux32",
-        "linux64",
-        "win32",
-        "win64"
-      ],
-      "version": "latest",
-      "flavor": "normal",
-      "buildDir": "./build-dwa",
-      "cacheDir": "./cache",
-      "macIcns": "./public/favicon.icns"
+    "//": "https://github.com/nwjs-community/nw-builder",
+    "platforms": [
+      "osx64",
+      "linux32",
+      "linux64",
+      "win32",
+      "win64"
+    ],
+    "version": "latest",
+    "flavor": "normal",
+    "buildDir": "./build-dwa",
+    "cacheDir": "./cache",
+    "macIcns": "./public/favicon.icns"
   },
   "browserslist": [
     ">0.2%",
