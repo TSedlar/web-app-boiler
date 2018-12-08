@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Framework7 from "framework7/framework7.esm.bundle.js";
+import Framework7React from "framework7-react";
+
 import "./index.css";
-import App from "./App";
+import Main from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+Framework7.use(Framework7React);
+
 const startApp = () => {
-  ReactDOM.render(<App />, document.getElementById("root"));
+  ReactDOM.render(<Main />, document.getElementById("root"));
   serviceWorker.register();
 };
 
